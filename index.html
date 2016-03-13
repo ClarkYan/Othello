@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../favicon.ico"> 
+    
+		<title>Othello Game</title>
+		
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+                
+   </head>
+   
+<!--<body background="img/bg1.jpg">-->
+<body>
+<div class="container">
+  <div class="jumbotron" style="background: -webkit-linear-gradient(#578187 0%, #ffffff 100%)">
+	<div class="row">
+		<div class="col-xs-8 col-sm-7">
+           <canvas id="myCanvas" width="480" height="480" onmousedown="clickListener(event);">your browser does not support the canvas tag </canvas>
+		</div>
+		<div class="col-xs-4 col-sm-5">
+           <input id="new" type="button" class="btn btn-success" value="NEW GAME" style="height:130px;width:130px" onclick="newGame();"/>
+           <input id="retract" type="button" class="btn btn-primary" value="RETRACT" disabled="disabled" style="height:130px;width:130px"/>
+           <input id="hint" type="button" class="btn btn-danger" value="HINTS OFF" style="height:130px;width:130px" onclick="hintsEvent();"/>		   <input id="ai" type="button" class="btn btn-info" value="VS COMPUTER" disabled="disabled" style="height:130px;width:130px" onclick=""/>
+           <input id="result" type="button" class="btn btn-warning" value="BLACK:2  WHITE:2  TURN:BLACK" disabled="disabled" style="height:130px;width:260px"/>
+        </div>
+	</div>
+  </div>
+</div>
+
+    <script src="js/othello.js"></script>
+ 
+</body>
+</html>
